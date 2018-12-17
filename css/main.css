@@ -1,0 +1,12 @@
+/*CSS Color scheme*/
+:root {
+    --lighter:      #F8F7F6;
+    --light:       #AFBBC3;
+    --medium:      #7791A6;
+    --dark:        #8099B8;
+    --darker:      #2D5D7C;
+}
+
+html {
+    background-color: var(--lighter);
+}
