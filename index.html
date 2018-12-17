@@ -6,25 +6,171 @@
     <meta name="keywords" content="HTML,CSS,XML,JavaScript">
     <meta name="author" content="Jacob Reiter">
 
-    <title>Bio Site - Bellevue</title>
+    <title>Bio Site - Bellevue University</title>
+    <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+<header>
+    <div id="banner"></div>
+    <!--the profile photo-->
+    <div id="profile-photo" style="background-image:url(images/img1.jpg)"></div>
+    <div id="profile-name">
+        <h1>Sol Choi Reiter</h1>
+        <span id="tag-line">Ipsum What</span>
+    </div>
+    <hr/>
+</header>
+<!--Navigation-->
+<nav>
+    <ul>
+        <li>
+            <a href="#about">
+                About Sol
+            </a>
+        </li>
+        <li>
+            <a href="#hobbies">Hobbies</a>
+        </li>
+        <li>
+            <a href="#photography">Photograpy</a>
+        </li>
+    </ul>
+    <!--TODO: play with styles to make it look betterr-->
+</nav>
 <main>
-    <header>
-        <h1>
-            Bio Site - Bellevue University
-        </h1>
-    </header>
-    <section>
+    <section id="about">
         <article>
-            <p>ipsum</p>
+
+            <!--Floating img to the right-->
+            <div class="polaroid" style="float:right">
+                <div class="frame" style="background-image:url(images/img2.jpg)"></div>
+                <div class="caption">
+                    Sol &amp; Lilly
+                </div>
+            </div>
+
+            <h2>About Sol</h2>
+            <p>
+                <b>Sol Choi Reiter</b> is 30 years old, born in Seoul, South Korea and is currently living in St. Louis, Missouri.
+                Before getting married in 2012 in Las Vegas, her korean name was <b>죄은솔</b>, which translates
+                to Choi, Eun-Sol. <b>Choi</b> is her family name and Korean's last names are based off their families
+                historical clan.
+            </p>
+            <p>
+                Korean siblings names are often similar and made from two syllables. Her sister's first naem is
+                <b>Eun-Byeol</b>. Sol (short for Eunsol) is physically far from her family currently, but stays close
+                through facetime video chat talking with her parents and sister. Her dad owns a commercial
+                AC repair company.
+            </p>
+            <p>
+                Being a military spouse for 7 years can be tough at times. With the military comes a lot of travel and
+                relocation. Sol makes the best of the situation by learning new languages such as Spanish and making
+                new friends everywhere she goes.
+            </p>
+            <p>
+                Sol has two dogs which she loves dearly! Jinx is a 4 year old German shepard
+                and Lilly is a 2 year old Mini Schnauzer. Shes active on Social media platforms such as
+                <a href="https://www.instagram.com/jinx_r_lilly/?hl=en" target="_blank">Instagram</a> and
+                <a href="https://twitter.com/_hellojinx" target="_blank">Twitter</a>. The dogs seem to be popular
+                and have <em>over 10,000 followers in Korea</em>!
+            </p>
+
+            <div class="gallery">
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img3.jpg)"></div>
+                    <div class="caption">
+                        With friends
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img4.jpg)"></div>
+                    <div class="caption">
+                        Dad, "Appa"
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img5.jpg)"></div>
+                    <div class="caption">
+                        Puppy sitting
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img6.jpg)"></div>
+                    <div class="caption">
+                        Training Jinx
+                    </div>
+                </div>
+            </div>
+
+        </article>
+    </section>
+    <section id="hobbies">
+        <h2>Hobbies &amp; Interests</h2>
+        <hr/>
+        <!--crafts article-->
+        <article>
+
+            <div class="polaroid" style="float:right">
+                <div class="frame" style="background-image:url(images/img7.jpg)"></div>
+                <div class="caption">
+                    Making things to sell on Etsy!
+                </div>
+            </div>
+
+            <h3>Sewing, Embroidery and Crafts</h3>
+            <p>
+                For her mom's birthday she bought her a sewing machine, but ended up liking it
+                so much she got addicted and bought her own. Recently she's making Christmas presents and
+                testing items to sell online at Etsy! She's only done it for a short time but is already
+                really good. She especially enjoys putting attention to small details and good fit.
+            </p>
+            <!--TODO write more paragraphs here-->
+            <div class="gallery">
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img8.jpg)"></div>
+                    <div class="caption">
+                        Little red riding dog
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img9.jpg)"></div>
+                    <div class="caption">
+                        Trying some patterns
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img10.jpg)"></div>
+                    <div class="caption">
+                        Sample pet bandanna
+                    </div>
+                </div>
+                <div class="polaroid">
+                    <div class="frame" style="background-image:url(images/img11.jpg)"></div>
+                    <div class="caption">
+                        A hard days work.
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!--photography article-->
+        <article id="photography">
+            <h3>Photograpy</h3>
+            <p>
+                One of the reasons here social media sites are so popular is because she takes a lot of photographs.
+                When she's not using her Iphone to take pictures, her preference is a Fujifilm DSLR.
+                <!--TODO write more here-->
+                <!--TODO example photography-->
+            </p>
         </article>
     </section>
 </main>
 <footer style="clear:both;">
+    <!--TODO stylize the footer, include useful info here-->
     <hr/>
     <a href="mailto:jacobreiter@my365.bellevue.edu" id="external-link">Contact me</a>
+    top right bottom
 </footer>
 </body>
 </html>

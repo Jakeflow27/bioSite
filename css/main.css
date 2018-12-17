@@ -9,4 +9,120 @@
 
 html {
     background-color: var(--lighter);
+    font-family: 'Abel', sans-serif;
+}
+body {
+    margin: 0 auto;
+}
+main {
+    max-width:1024px;
+    margin: 0 auto;
+}
+section,.gallery {
+    clear:both;
+    margin-bottom: 1em;
+}
+nav {
+    width: 180px;
+    border: dashed 1px var(--light);
+    /* color: var(--darker); */
+    /* float: left; */
+    border-radius: 0 1em 1em 0;
+    position: absolute;
+}
+nav ul li{
+    list-style-type: none;
+}
+nav ul li a {
+    background-color: var(--dark);
+    padding: .5em;
+    color: var(--lighter);
+    border-radius: .5em;
+    line-height: 2.5em;
+}
+nav ul li a:hover {
+    background-color: var(--darker);
+    color: var(--light);
+}
+#banner {
+    background-color: var(--light);
+    height: 12em;
+}
+#profile-photo {
+    position: absolute;
+    top: 3em;
+    left: 2em;
+    width: 14em;
+    height: 14em;
+    display: block;
+    background-color: var(--medium);
+    background-size: cover;
+    background-position: center;
+    border-radius: 8em;
+    border: solid 1em white;
+}
+#profile-name {
+    margin: 0 19em;
+}
+#tag-line{
+    font-style: italic;
+}
+.polaroid {
+    /*transform-origin: bottom;*/
+    /*transform: rotate(5deg);*/
+    box-shadow: 3px 4px 20px 0px #bbb;
+    background-color:white;
+    padding: 1em;
+    width: 18em;
+    margin: 2em;
+    display: inline-block;
+}
+.polaroid .frame {
+    background-size: cover;
+    width: 18em;
+    height: 18em;
+    display: block;
+}
+.gallery {
+    height: 22em;
+    /*border: dashed 1px var(--light);*/
+    border-radius: 1em;
+    padding: 1em 0 2em 2em;
+}
+.gallery .frame {
+    width:16em;
+    height:16em;
+}
+.gallery .polaroid{
+    width:16em;
+}
+.gallery .caption {
+    font-size:1em;
+}
+.polaroid .caption {
+    padding-top: 1em;
+     padding-bottom: .5em;
+    font-family: 'Handlee', cursive;
+    text-align: center;
+    font-weight: bold;
+    color: #333;
+    font-size: 1.5em;
+}
+.gallery .polaroid{
+    margin: 0 0 0 -3em;
+    transform: rotate(3deg);
+    float:left;
+    transition: all 500ms;
+}
+
+.gallery .polaroid:hover{
+    /*zoom:1.2;*/
+    transform: rotate(-1deg);
+}
+
+footer {
+    clear: both;
+    height: 200px;
+    background-color: var(--darker);
+    color: var(--lighter);
 }
